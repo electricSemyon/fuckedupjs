@@ -1,0 +1,41 @@
+.main-nav {
+  display: flex;
+  border-bottom: 2px solid #f6f6f6;
+  background-color: white;
+  box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.3);
+}
+
+.main-nav__inner {
+  width: $width;
+  margin: 0 auto;
+}
+
+.main-nav__list {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  margin-top: 15px
+  ;
+}
+
+.main-nav__element {
+  margin-right: 20px;
+}
+
+.main-nav__link {
+  color: black;
+  transition: 0.3s;
+
+  &:hover {
+    color: #d46767;
+  }
+}
+
+.main-nav__element--logo {
+  font-size: 20px;
+  margin-right: auto;
+  background: -webkit-linear-gradient(#ffd67e, #d46767, #6459f0);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

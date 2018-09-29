@@ -1,3 +1,5 @@
+include mixins/header
+
 doctype html
 html
   head
@@ -6,7 +8,4 @@ html
     title Ебучий фронтенд
     link(rel="stylesheet", href="/css/style.css")
   body
-    header.page-header
-      .page-header__inner
-        h2 ебучий Фронтенд
-  
+    +header

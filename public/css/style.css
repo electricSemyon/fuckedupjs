@@ -1,8 +1,156 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url("/fonts/gotha-reg.woff") format("woff"), url("/fonts/gotha-reg.otf") format("otf");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("/fonts/gotha-black.woff") format("woff"), url("/fonts/gotha-black.otf") format("otf");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Gotham';
+  src: url("/fonts/gotha-light.woff") format("woff"), url("/fonts/gotha-light.otf") format("otf");
+  font-weight: 300;
+  font-style: normal; }
+
+/* Variables */
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  25% {
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); }
+  75% {
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg); }
+  100% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg); } }
+
+.main-header {
+  padding: 0;
+  margin: 0; }
+
+.main-header__inner {
+  width: 750px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 50px; }
+
+.main-header__title {
+  font-size: 45px;
+  margin-bottom: 0; }
+
+.main-header__description {
+  width: 320px;
+  margin-top: 5px; }
+
+.main-header__picture {
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+
+.main-header__picture {
+  -webkit-animation: rotate infinite 5s linear;
+  animation: rotate infinite 5s linear; }
+
+.main-header__action {
+  font-family: 'Gotham';
+  font-weight: 300;
+  font-size: 20px;
+  background: -webkit-linear-gradient(#ffd67e, #d46767, #6459f0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border: 2px solid;
+  padding: 5px 25px;
+  -o-border-image: linear-gradient(to left, #6459f0 0%, #d46767 50%, #ffd67e 100%);
+  border-image: -webkit-gradient(linear, right top, left top, from(#6459f0), color-stop(50%, #d46767), to(#ffd67e));
+  border-image: linear-gradient(to left, #6459f0 0%, #d46767 50%, #ffd67e 100%);
+  border-image-slice: 1;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .main-header__action:hover {
+    background-color: red; }
+
+.main-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 2px solid #f6f6f6;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 5px 1px rgba(0, 0, 0, 0.3); }
+
+.main-nav__inner {
+  width: 750px;
+  margin: 0 auto; }
+
+.main-nav__list {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-top: 15px; }
+
+.main-nav__element {
+  margin-right: 20px; }
+
+.main-nav__link {
+  color: black;
+  -webkit-transition: 0.3s;
+  transition: 0.3s; }
+  .main-nav__link:hover {
+    color: #d46767; }
+
+.main-nav__element--logo {
+  font-size: 20px;
+  margin-right: auto;
+  background: -webkit-linear-gradient(#ffd67e, #d46767, #6459f0);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+html {
+  font-family: 'Gotham';
+  font-weight: 400;
+  font-size: 17px; }
+
 body {
   margin: 0;
   padding: 0;
-  min-width: 320px;
-  background-color: red; }
+  min-width: 1200px; }
 
 a {
   text-decoration: none; }
