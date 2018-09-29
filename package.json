@@ -1,0 +1,26 @@
+{
+  "name": "fuckedupjs",
+  "version": "1.0.0",
+  "description": "деньги плоти",
+  "main": "start.js",
+  "scripts": {
+    "style": "cd public && gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "concurrently \"nodemon start.js\" \"npm run style\""
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3",
+    "path": "^0.12.7",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.5",
+    "concurrently": "^4.0.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-sass": "^4.0.1",
+    "sass": "^1.14.1"
+  }
+}
