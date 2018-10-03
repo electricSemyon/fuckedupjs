@@ -189,6 +189,34 @@
   border: 0px;
   cursor: pointer; }
 
+.development {
+  padding: 50px 0; }
+
+.development__inner {
+  margin: 0 auto;
+  width: 750px; }
+
+.development__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start; }
+
+.development__heading {
+  font-size: 45px;
+  margin: 0 5px 0 0; }
+
+.development__emphasis {
+  font-style: normal;
+  background: #f8555a;
+  color: white;
+  padding: 5px 15px;
+  -webkit-transform: skewX(-10deg);
+  transform: skewX(-10deg);
+  text-align: center; }
+
 html {
   font-family: 'Gotham';
   font-weight: 400;
