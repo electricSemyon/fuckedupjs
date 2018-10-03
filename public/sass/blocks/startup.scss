@@ -1,0 +1,39 @@
+.startup {
+  background-color: #f8555a;
+  padding: 50px 0;
+}
+
+.startup__inner {
+  margin: 0 auto;
+  width: $width;
+  color: white;
+}
+
+.startup__content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  // align-content: flex-start;
+}
+
+.startup__heading {
+  font-size: 45px;
+  margin: 0;
+}
+
+.startup__description {
+  max-width: 400px;
+}
+
+.startup__btn {
+  background-color: white;
+  width: 100%;
+  font-size: 17px;
+  height: 42px;
+  color: #f8555a;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: #ffebeb;
+  }
+}

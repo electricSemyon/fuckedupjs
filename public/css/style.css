@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: 'Gotham';
   src: url("/fonts/gotha-reg.woff") format("woff"), url("/fonts/gotha-reg.otf") format("otf");
@@ -63,7 +64,7 @@
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 50px; }
+  padding: 50px 0; }
 
 .main-header__title {
   font-size: 45px;
@@ -141,6 +142,52 @@
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+.startup {
+  background-color: #f8555a;
+  padding: 50px 0; }
+
+.startup__inner {
+  margin: 0 auto;
+  width: 750px;
+  color: white; }
+
+.startup__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.startup__heading {
+  font-size: 45px;
+  margin: 0; }
+
+.startup__description {
+  max-width: 400px; }
+
+.startup__btn {
+  background-color: white;
+  width: 100%;
+  font-size: 17px;
+  height: 42px;
+  color: #f8555a;
+  -webkit-transition: 0.2s;
+  transition: 0.2s; }
+  .startup__btn:hover {
+    background-color: #ffebeb; }
+
+/* Тупо переопределяем дефолтную кнопку */
+.btn {
+  font-family: 'Gotham';
+  font-weight: bold;
+  border: 0px;
+  cursor: pointer; }
 
 html {
   font-family: 'Gotham';
