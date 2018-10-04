@@ -5,12 +5,28 @@ mixin development
         h2.development__heading Разработка на заказ
         em.development__emphasis Долго, дорого, пиздато
       .development__content
-        h3.development__catch Хочешь быть успешным?
-        p.development__text Сожалеем.
-          br 
-          |  Но, раз уж так, то мы готовы взяться за любые твои хотелки.
-          |  Приложения для доставки туалетной бумаги, справочники ветеринаров,
-          |  Стартапы про котлеты – мы повидали всякое и готовы сделать всё в лучшем виде.
-          |  Специализируемся на веб- и мобильной разработке.
-        h3.development__catch Используемые технологии:
-        p.development__emphasis тебя ебать не должно бля
+        .development__topic
+          h3.development__catch Хочешь быть успешным?
+          p.development__text Сожалеем.
+            br 
+            |  Но, раз уж так, то мы готовы взяться за любые твои хотелки.
+            |  Приложения для доставки туалетной бумаги, справочники ветеринаров,
+            |  Стартапы про котлеты – мы повидали всякое и готовы сделать всё в лучшем виде.
+          p.development__text Специализируемся на веб- и мобильной разработке.
+        img.development__picture(src="/img/coin.png" width="256" height="256" title="МММММАРИО ОДИН!")
+      .development__content
+        .development__topic
+          h3.development__catch.development__catch--calculator Перейдём к цифрам
+          p.development__text Расклад такой: мы любим пить пиво "гараж" и писать на языке программирования "яваскрипт еэс6".
+            |  Попробуй совместить свои возможности с нашими потребностями.
+          .development__calculator
+          strong.development__calculate За ваш бюджет в...
+          .development__slider
+            input(type="range" min="0" max="100" value="50" step="5" name="cash").development__range
+        .development__calculated
+          strong.development__result
+          strong.development__currency дёлляров
+      .development__list
+        h3.development__list-title ...Мы готовы:
+        ul.development__activities-list
+          li.development__list-element Обоссать тебе ебало
