@@ -3,6 +3,7 @@ const activities = ['Обоссать тебе ебало', 'Может быть
 const slider = document.querySelector('.development__range');
 let output = document.querySelector('.development__result');
 const list = document.querySelector('.development__activities-list');
+const btn = document.querySelector('.development__btn');
 
 // Инишал вэлью ебать его в рот
 output.textContent = `${slider.value}`
@@ -11,7 +12,14 @@ slider.addEventListener('input', () => {
   output.textContent = slider.value;
   list.innerHTML = printActivities().reduce((html, activity) => {
     return html + `<li class="development__list-element">${activity}</li>`;
-  }, '')
+  }, '');
+  if (slider.value >= 80) {
+    btn.removeAttribute('disabled');
+    btn.textContent = 'Кинуть нам свои гроши'
+  } else {
+    btn.setAttribute('disabled', '');
+    btn.textContent = 'Кнопка не для бомжей'
+  }
 });
 
 // че, пацаны, клинкод?
