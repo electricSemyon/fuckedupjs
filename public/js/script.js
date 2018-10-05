@@ -1,5 +1,5 @@
 // У меня не очень хорошо с фантазией:
-const activities = ['Обоссать тебе ебало', 'Может быть расчехлить свои IDE', 'Сверстать cтраничку', 'Раз денег дохуя то на счётчик поставим'];
+const activities = ['Обоссать тебе ебало', 'Может быть расчехлить свои IDE', 'Сверстать cтраничку', 'Подключить жикваери'];
 const slider = document.querySelector('.development__range');
 let output = document.querySelector('.development__result');
 const list = document.querySelector('.development__activities-list');
