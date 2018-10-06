@@ -1,6 +1,11 @@
 .startup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f8555a;
   padding: 50px 0;
+  height: 100vh;
+  border-bottom: 1px solid #fff;
 }
 
 .startup__inner {
@@ -16,8 +21,12 @@
   // align-content: flex-start;
 }
 
+.startup__picture {
+  filter: drop-shadow(10px 10px 12px rgba(0,0,0,0.3));
+}
+
 .startup__heading {
-  font-size: 45px;
+  font-size: $heading-font-size;
   margin: 0;
 }
 
