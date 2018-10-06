@@ -11,14 +11,20 @@
   padding: 50px 0;
 }
 
+.main-header__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .main-header__title {
-  font-size: 45px;
-  margin-bottom: 0;
+  font-size: 60px;
+  margin: 0 0 $normal-margin 0;
 }
 
 .main-header__description {
-  width: 320px;
-  margin-top: 5px;
+  width: 360px;
+  margin: 0 0 $normal-margin 0;
 }
 
 .main-header__picture {
@@ -38,10 +44,11 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   border: 2px solid;
-  padding: 5px 25px;
+  padding: 10px 32px;
   border-image: linear-gradient(to left, #6459f0 0%, #d46767 50%, #ffd67e 100%);
   border-image-slice: 1;
   transition: 0.2s;
+  align-self: flex-start;
 
   &:hover {
     background-color: red;
