@@ -1,6 +1,7 @@
 include mixins/header
 include mixins/startup
 include mixins/development
+include mixins/design
 
 doctype html
 html
@@ -9,8 +10,13 @@ html
     meta(name="viewport" content="width=device-width,initial-scale=1")
     title Ебучий фронтенд
     link(rel="stylesheet", href="/css/style.css")
+
+    script(crossorigin src="https://unpkg.com/react@16/umd/react.development.js")
+    script(crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.development.js")
+    script(crossorigin src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.26.0/babel.min.js")
   body
     +header
     +startup
     +development
+    +design
     script(src="/js/script.js")
