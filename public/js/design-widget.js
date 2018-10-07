@@ -7,8 +7,8 @@ const Roll = ({ multiplier }) => (
     height={ 130 }
     className="design__roll"
     style={{
-      bottom: `calc(50% - ${multiplier * 30}px)`,
-      right: `calc(50% - ${multiplier * 30}px)`,
+      bottom: `calc(50% - ${ multiplier * 35 }px)`,
+      right: `calc(50% - ${ multiplier * 35 }px)`,
     }}
   />
 )
