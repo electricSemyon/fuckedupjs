@@ -13,7 +13,7 @@ slider.addEventListener('input', () => {
   list.innerHTML = printActivities(slider, activities).reduce((html, activity) => {
     return html + `<li class="development__list-element">${activity}</li>`;
   }, '');
-  if (slider.value >= 80) {
+  if (slider.value > 65) {
     btn.removeAttribute('disabled');
     btn.textContent = 'Кинуть нам свои гроши'
   } else {
